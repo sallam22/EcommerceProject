@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="27" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="27" time="48.456">
+<testcase classname="User can register and has an account on the website" name="User register with valid data" time="3.307">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User open registration page...........................................skipped
+When User enter gender type.................................................skipped
+And User enter first name "Mohamed" and last name "Moustafa"................skipped
+And User select date of birth...............................................skipped
+And User enter email "mohamed.moustafa@test.com"............................skipped
+And User enter password fields "P@ssword123"................................skipped
+And User click on register button...........................................skipped
+Then success registration message appears...................................skipped
+And User click on continue button to return to home page....................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="User can log in the website" name="User login with valid credentials" time="1.678">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User open login page..................................................skipped
+When User enter email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+And User click on login button..............................................skipped
+Then User login successfully and return to home page........................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="User can log in the website" name="User login with invalid credentials" time="1.684">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User open login page..................................................skipped
+When User enter email "invalid.email@test.com" and password "invalid.password".skipped
+And User click on login button..............................................skipped
+Then User login failed and error message appears............................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can switch between currencies US-Euro" name="User change currency from US to Euro" time="1.662">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User select euro currency from drop down menu..........................skipped
+Then All items prices change to euro........................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can search for any product" name="Logged user search using product name" time="1.686">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User enter a product name "book" in search text field..................skipped
+And User click on search button.............................................skipped
+Then Search result appears with products related to the product name "book".skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can search for any product" name="Logged user search using product name 2" time="1.672">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User enter a product name "laptop" in search text field................skipped
+And User click on search button.............................................skipped
+Then Search result appears with products related to the product name "laptop".skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can search for any product" name="Logged user search using product name 3" time="1.692">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User enter a product name "nike" in search text field..................skipped
+And User click on search button.............................................skipped
+Then Search result appears with products related to the product name "nike".skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can search for any product" name="Logged user search using product sku" time="1.772">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User enter a product sku "SCI_FAITH" in search text field..............skipped
+And User click on search button.............................................skipped
+Then Search result appears with products related to the product sku "SCI_FAITH".skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can search for any product" name="Logged user search using product sku 2" time="1.743">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User enter a product sku "APPLE_CAM" in search text field..............skipped
+And User click on search button.............................................skipped
+Then Search result appears with products related to the product sku "APPLE_CAM".skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can search for any product" name="Logged user search using product sku 3" time="1.781">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User enter a product sku "SF_PRO_11" in search text field..............skipped
+And User click on search button.............................................skipped
+Then Search result appears with products related to the product sku "SF_PRO_11".skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="User can reset his/her password successfully" name="User reset password with valid email" time="1.674">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User at login page....................................................skipped
+When User click on forgot password link.....................................skipped
+And User enter valid email "mohamed.moustafa@test.com"......................skipped
+And User click on recover button............................................skipped
+Then message appears tell user that an email has been sent to him...........skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="User can reset his/her password successfully" name="User reset password with invalid email" time="1.689">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User at login page....................................................skipped
+When User click on forgot password link.....................................skipped
+And User enter valid email "invalid.email@test.com".........................skipped
+And User click on recover button............................................skipped
+Then message appears tell user this email is not found......................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can select different Categories in the website" name="User select sub-category" time="1.793">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User hover to a category and click on one of its sub-categories........skipped
+Then User will navigate to a page contains products about that sub-category.skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can filter with color" name="Logged user filter products with color" time="1.806">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+And User navigate to category which has filter color options for its products.skipped
+When User select a specific color from options..............................skipped
+Then Category products will change to be for that color only................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can add different products to Shopping cart" name="Logged user add different products to Shopping cart" time="1.842">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User navigate to Notebooks category page...............................skipped
+And User click on Add To Cart button for a product..........................skipped
+And User navigate to Books category page....................................skipped
+And User click on Add To Cart button for two books from products............skipped
+And User navigate to Shopping Cart page.....................................skipped
+Then Shopping cart will contains all selected products......................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="User can add different products to Wishlist" name="User add htc phone product to Wishlist" time="1.803">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User at the homepage..................................................skipped
+When User click on add to wishlist button of htc phone......................skipped
+Then success message appears which confirm adding of the product............skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="User can add different products to Wishlist" name="User add htc phone product to Wishlist and validate its quantity" time="1.732">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User at the homepage..................................................skipped
+When User click on add to wishlist button of htc phone......................skipped
+And User click on Wishlist link.............................................skipped
+Then User will navigate to wishlist page which contain htc phone product with its quantity.skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can add different products to compare list" name="Logged user add different products to compare list" time="1.745">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User navigate to notebooks products page...............................skipped
+And User add different products to the compare list.........................skipped
+And User navigate to compare products list page.............................skipped
+Then compare products list will contain all selected products...............skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can purchase product from the website" name="Logged user purchase with cash payment" time="1.746">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User select product from a category....................................skipped
+And User add the product to the shopping cart...............................skipped
+And User click on checkout button to purchase the product...................skipped
+And User enter mandatory valid information for payment......................skipped
+And User click on confirm button to complete the payment....................skipped
+Then Success completed order message appears................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can select different tags" name="Logged user select awesome tag" time="1.666">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User open notebooks category page......................................skipped
+And User click on awesome tag from product tags.............................skipped
+Then User will navigate to a page contains products related to awesome tag..skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="Logged user can select different tags" name="Logged user select cell tag" time="1.662">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User log in with email "mohamed.moustafa@test.com" and password "P@ssword123".skipped
+When User open notebooks category page......................................skipped
+And User click on cell tag from product tags................................skipped
+Then User will navigate to a page contains products related to cell tag.....skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="User can select between options in home slider" name="First slider is clickable on home page" time="1.697">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User at home page.....................................................skipped
+When User click on first slider nokia image.................................skipped
+Then User navigate to nokia product details page............................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="User can select between options in home slider" name="Second slider is clickable on home page" time="1.714">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User at home page.....................................................skipped
+When User click on second slider iphone image...............................skipped
+Then User navigate to iphone product details page...........................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="User can open followUs links" name="User opens facebook link" time="1.658">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User at the home page.................................................skipped
+When User click on facebook icon............................................skipped
+Then "https://www.facebook.com/nopCommerce" is opened in new tab............skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="User can open followUs links" name="User opens twitter link" time="1.715">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User at the home page.................................................skipped
+When User click on twitter icon.............................................skipped
+Then "https://twitter.com/nopCommerce" is opened in new tab.................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="User can open followUs links" name="User opens rss link" time="1.646">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User at the home page.................................................skipped
+When User click on rss icon.................................................skipped
+Then "https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab.skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+<testcase classname="User can open followUs links" name="User opens youtube link" time="1.64">
+<failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User at the home page.................................................skipped
+When User click on youtube icon.............................................skipped
+Then "https://www.youtube.com/user/nopCommerce" is opened in new tab........skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-MQTKGDQ', ip: '192.168.100.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_345'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at org.example.step_definitions.Hooks.startUp(Hooks.java:21)
+]]></failure>
+</testcase>
+</testsuite>

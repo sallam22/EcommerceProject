@@ -1,0 +1,14 @@
+file:src/main/resources/features/F08_ShoppingCart.feature:5
+file:src/main/resources/features/F05_PasswordRecovery.feature:5:12
+file:src/main/resources/features/F10_CompareProducts.feature:5
+file:src/main/resources/features/F06_Categories.feature:5
+file:src/main/resources/features/F11_CheckOut.feature:5
+file:src/main/resources/features/F02_Login.feature:5:12
+file:src/main/resources/features/F01_Registration.feature:5
+file:src/main/resources/features/F13_HomeSliders.feature:5:10
+file:src/main/resources/features/F07_Filter.feature:5
+file:src/main/resources/features/F12_Tags.feature:5:11
+file:src/main/resources/features/F09_WishList.feature:5:10
+file:src/main/resources/features/F04_Search.feature:13:14:15:25:26:27
+file:src/main/resources/features/F03_Currency.feature:5
+file:src/main/resources/features/F14_FollowUs.feature:5:10:15:20
